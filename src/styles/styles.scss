@@ -1,0 +1,98 @@
+@import 'vendors/reset.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif;
+    --gradient: linear-gradient(to right, #FEEC01, #77731E) 30;
+}
+
+body {
+    background-color: #9ACD31;
+    padding: 0.25rem 1rem;
+    border: solid 0.75rem white;
+    border-image: var(--gradient);
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 0.75rem;
+
+    .evo-and-name h1 {
+        font-weight: bold;
+    }
+
+    > p {
+        color: red;
+        font-size: 1.25rem;
+    }
+}
+
+img.illustration {
+    width: 100%;
+    border: solid 0.5rem white;
+    border-image: var(--gradient);
+}
+
+.pokemon__details {
+    font-size: 0.75rem;
+    background-image: linear-gradient(to right, #FEEC01, #77731E);
+    align-self: center;
+    margin-top: 0.5rem;
+    font-style: italic;
+    padding: 1px 0.5rem; 
+}
+
+.attacks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+
+    .attack__type {
+        display: flex;
+        flex-direction: row;
+        img {
+            height: 20px;
+        }
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+
+    p span {
+        font-size: 1.25rem;
+    }
+}
+
+hr {
+    border: solid 1.5px black;
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+    }
+}

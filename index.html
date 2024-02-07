@@ -4,29 +4,35 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles/style.scss" />
+    <link rel="stylesheet" href="src/styles/styles.scss" />
     <title>Bulbizarre</title>
   </head>
   <body>
 
       <header>
-        <p>Pokémon de base</p>
-        <h1>Bulbizarre</h1>
+        <div class="evo-and-name">
+          <p>Pokémon de base</p>
+          <h1>Bulbizarre</h1>
+        </div>
         <p>40 PV <img src="src/img/leaf.png" alt="Type Feuille"></p>
       </header>
 
-      <img src="src/img/bulbizarre.jpg" alt="Bulbizarre">
-      <p>Pokémon Graine. Taille : 0,7m, poids : 6,9 kg</p>
+      <img class="illustration" src="src/img/bulbizarre.jpg" alt="Bulbizarre">
+      <p class="pokemon__details">Pokémon Graine. Taille : 0,7m, poids : 6,9 kg</p>
 
-    <div>
-      <img src="src/img/leaf.png" alt="Type Feuille"> <img src="src/img/leaf.png" alt="Type Feuille">
+    <div class="attacks">
+      <div class="attack__type">
+        <img src="src/img/leaf.png" alt="Type Feuille">
+        <img src="src/img/leaf.png" alt="Type Feuille">
+      </div>
       <p>
-        <span><b>Vampigraine</b></span> À moins que tous les dégâts infligés par cette attaque ne soient prévenus, vous pouvez retirer 1 marqueur de dégâts de Bulbizarre.</p>
+        <span><b>Vampigraine</b></span> À moins que tous les dégâts infligés par 
+        cette attaque ne soient prévenus, vous pouvez retirer 1 marqueur de 
+        dégâts de Bulbizarre.</p>
       <span>20</span>
     </div>
-
-    <div>
-      <hr>
+    <hr />
+    <div class="infos">
       <div>
         <p>Faiblesse</p>
         <img src="src/img/fire.png" alt="Type Feu">
@@ -40,7 +46,8 @@
       </div>
     </div>
 
-    <p>Il a une étrange graine plantée sur son dos. Elle grandit avec lui depuis la naisasance. NIV. 13 No. 1</p>
+    <p class="description">Il a une étrange graine plantée sur son dos. Elle grandit avec lui depuis 
+      la naisasance. NIV. 13 No. 1</p>
 
   </body>
 </html>
